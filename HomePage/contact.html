@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="Shortcut Icon" href="img/favicon.ico" type="image/x-icon">
+		<title>洋货铺-联系我们</title>
+		<style type="text/css">
+		.top-list{width: 100%;height: 25px; background:#F2F2F2;font-size: 16px;}
+		.list-inline{width: 100%;text-align: center;}
+		.list-inline li:nth-child(1){width: 30%;text-align: left;}
+		.list-inline li:nth-child(2){width: 30%;text-align: right;}
+		strong{color:#FF5E18;}
+		.iw_poi_title{color:#CC5522;font-size:24px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    	.iw_poi_content{font-size:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+		.navbar{background: #FFFFFF;height: 80px;}
+		.container-fluid{margin-top: 80px;padding: 0;}
+		.panel-default>.panel-heading{text-align: center;background-color:#FFFFFF;border:none;}
+		.panel-heading h2{display: inline-block;border-bottom: 3px solid #FF5E18;}
+		.panel-body{text-align: center;}
+		.panel-footer{text-align: center;background: #302825;color: #FFFFFF;}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="top-list">
+				<ul class="list-inline">
+					<li>欢迎来到洋货铺</li>
+					<li><img src="img/tel.png" alt="" /><strong>400-166-8448</strong></li>
+				</ul>
+			</div>
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand" style="margin:0;padding:0;"><img src="img/logo.png" alt="洋货铺"></a>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse"> 
+						<span class="sr-only">切换导航</span> 
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span> 
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-collapse">
+					<ul class="nav navbar-nav navbar-right"  style="margin-top:0;">
+						<li><a href="">首页</a></li>
+						<li><a href="">关于我们</a></li>
+						<li><a href="">门店加盟</a></li>
+						<li><a href="">联系我们</a></li>
+					</ul>
+				</div>
+			</div>	
+		</nav>	
+	<div class="container-fluid">
+		<div style="width:100%;height:550px;border:#ccc solid 1px;" id="dituContent"></div>
+		<div class="panel panel-default">
+  			<div class="panel-heading"><h2>联系我们</h2></div>
+      	<div class="panel-body">
+      		<h3>杭州蜂创科技有限公司</h3>
+      		<p>地址：杭州经济技术开发区白杨街道6号大街452号2幢B0718-0719号室</p>
+      		<p>客户电话：0571-87550002</p>
+      		<p>400电话：400-166-8448</p>
+      		<p>客户服务邮箱：feedback@d1ty.com</p>
+      		<p>合作咨询邮箱：partner@d1ty.com</p>
+      		<br />
+      		<h3>全球购洋货铺杭州旗舰店</h3>
+      		<p>地址：杭州下沙经济开发区新加坡科技园4幢1楼</p>
+      	</div>
+      	<div class="img" style="text-align: center;margin-bottom: 50px;">
+      		<img src="img/contact_1.png" width="300"height="200" alt="" />
+      		<img src="img/contact_2.png" width="300"height="200" alt="" />
+      		<img src="img/contact_3.png" width="300"height="200" alt="" />
+      	</div>
+	</div>
+	
+	<footer class="footer panel-footer navbar-fixed-bottom">
+    	<div class="container">
+    		<span>浙ICP备16003625 杭州旋龙贸易有限公司 Copyright&copy; 2013-2016,yanghp.com Inc</span>
+    	</div>
+	</footer>	
+	
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+	<script type="text/javascript">
+		    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+        addRemark();//向地图中添加文字标注
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(120.377393,30.31054);//定义一个中心点坐标
+        map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+	map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+	map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+	map.addControl(ctrl_sca);
+    }
+    
+    //标注点数组
+    var markerArr = [{title:"洋货铺",content:"杭州下沙经济开发区新加坡科技园4幢1楼",point:"120.376495|30.309838",isOpen:0,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+			var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+			var iw = createInfoWindow(i);
+			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+			marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+			
+			(function(){
+				var index = i;
+				var _iw = createInfoWindow(i);
+				var _marker = marker;
+				_marker.addEventListener("click",function(){
+				    this.openInfoWindow(_iw);
+			    });
+			    _iw.addEventListener("open",function(){
+				    _marker.getLabel().hide();
+			    })
+			    _iw.addEventListener("close",function(){
+				    _marker.getLabel().show();
+			    })
+				label.addEventListener("click",function(){
+				    _marker.openInfoWindow(_iw);
+			    })
+				if(!!json.isOpen){
+					label.hide();
+					_marker.openInfoWindow(_iw);
+				}
+			})()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+//文字标注数组
+    var lbPoints = [{point:"120.393024|30.322776",content:"洋货铺"}
+		 ];
+    //向地图中添加文字标注函数
+    function addRemark(){
+        for(var i=0;i<lbPoints.length;i++){
+            var json = lbPoints[i];
+            var p1 = json.point.split("|")[0];
+            var p2 = json.point.split("|")[1];
+            var label = new BMap.Label("<div style='padding:2px;'>"+json.content+"</div>",{point:new BMap.Point(p1,p2),offset:new BMap.Size(3,-6)});
+            map.addOverlay(label);
+            label.setStyle({borderColor:"#999"});
+        }
+    }
+    
+    initMap();//创建和初始化地图
+	</script>
+	</body>
+</html>

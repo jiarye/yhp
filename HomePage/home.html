@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="Shortcut Icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/Swiper/3.3.1/css/swiper.css" />
+		<title>洋货铺-首页</title>
+		<style type="text/css">
+			.top-list{width: 100%;height: 25px; background:#F2F2F2;font-size: 16px;}
+			.list-inline{width: 100%;text-align: center;}
+			.list-inline li:nth-child(1){width: 30%;text-align: left;}
+			.list-inline li:nth-child(2){width: 30%;text-align: right;}
+			strong{color:#FF5E18;}
+			.navbar {background: #FFFFFF;height: 80px;}
+			.container-fluid {margin-top: 80px;padding: 0;}
+			.panel-footer {text-align: center;background: #302825;color: #FFFFFF;}
+			.title {text-align: center;font-size: 2.5rem;border-bottom: 2px solid red;width: 8.4rem;margin: 0 auto;margin-top: 2rem;}
+			.name {padding-top: 1rem;color: #656060;}
+			.row {text-align: center;padding-bottom: 5rem;}
+			.card {text-align: center;float: left;width: 10%;background: #ffffff;margin-left: 1%;margin-top: 3%;margin-bottom: 6%;padding: 1% 1%;height: 15rem;border-radius: 5px;}
+			.card-icon {padding-left: 16%;width: 100%;padding-right: 16%;}
+			.part1 {background: #eeeeee;padding-top: 1%;}
+			.swiper-slide-2 {padding-left: 22.5%;}
+			.card-name {margin-top: 50%;}
+			.form-control {background-color: #3B3330;}
+			.join {color: #ffffff;background-color: #3B3330;}
+			.txt-c {text-align: center;}
+			.float-l{float: left;}
+			.part1 .swiper-pagination-bullet-active {background: #ffffff;}
+			.part2 {background: #000000;border-radius: 5px;color: #FFFFFF;padding-top: 2%;padding-bottom: 5%;}
+			.part2-left {float: left;width: 30%;margin-left: 20%;margin-right: 10%;border: none;border-radius: 5px;}
+			.part2-right{float: left;width: 20%;margin-right: 20%;margin-top: 7%;line-height: 2rem;font-size: 2rem;}
+			.part3{width: 63%;margin: 0 auto;padding-top: 3%;padding-bottom: 5%;}
+			.tiaoma{width: 60%;margin-left: 20%; margin-right: 20%;}
+		</style>
+
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="top-list">
+				<ul class="list-inline">
+					<li>欢迎来到洋货铺</li>
+					<li><img src="img/tel.png" alt="" /><strong>400-166-8448</strong></li>
+				</ul>
+			</div>
+			
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand" style="margin:0;padding:0;"><img src="img/logo.png" alt="洋货铺"></a>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse"> 
+						<span class="sr-only">切换导航</span> 
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span> 
+					</button>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbar-collapse">
+					<ul class="nav navbar-nav navbar-right" style=" margin-top:0;">
+						<li><a href="home.html ">首页</a></li>
+						<li><a href="about.html ">关于我们</a></li>
+						<li><a href="join.html ">门店加盟</a></li>
+						<li><a href="contact.html ">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!--swiper 轮播-->
+		<div class="swiper-container ">
+			<div class="swiper-wrapper ">
+				<div class="swiper-slide "><img src="img/Banner_1.png" class="img-responsive " /></div>
+				<div class="swiper-slide "><img src="img/Banner_2.png" class="img-responsive " /></div>
+				<div class="swiper-slide "><img src="img/Banner_3.png " class="img-responsive " /></div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<div class="title">核心优势</div>
+		<div class="container-fluid container">
+			<div class="row">
+				<div class="col-xs-1   col-sm-1  col-sm-offset-1 col-xs-offset-1">
+					<div class=""><img src="img/home_11.png" class="img-responsive" /></div>
+					<div class="name">无线仓储</div>
+				</div>
+
+				<div class="col-xs-1  col-sm-1  col-sm-offset-1 col-xs-offset-1">
+					<div class=""><img src="img/home_13.png" class="img-responsive" /></div>
+					<div class="name">多样货源</div>
+				</div>
+
+				<div class="col-xs-1  col-sm-1  col-sm-offset-1 col-xs-offset-1">
+					<div class=""><img src="img/home_15.png" class="img-responsive" /></div>
+					<div class="name">完整系统</div>
+				</div>
+
+				<div class="col-xs-1  col-sm-1 col-sm-offset-1 col-xs-offset-1">
+					<div class=""><img src="img/home_17.png" class="img-responsive" /></div>
+					<div class="name">成熟运营</div>
+				</div>
+
+				<div class="col-xs-1  col-sm-1  col-sm-offset-1 col-xs-offset-1">
+					<div class=""><img src="img/home_19.png" class="img-responsive" /></div>
+					<div class="name">强大技术</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="part1">
+			<div class="title">现有品牌</div>
+			<!--swiper 轮播-->
+			<div class="swiper-container ">
+				<div class="swiper-wrapper ">
+
+					<div class="swiper-slide swiper-slide-2">
+						<div class=" card">
+							<div class=""><img src="img/brand_03.png" class="img-responsive card-icon" /></div>
+							<div class="card-name">爱他美</div>
+						</div>
+						<div class=" card">
+							<div class=""><img src="img/brand_05.png" class="img-responsive card-icon" /></div>
+							<div class="card-name">荷兰牛栏</div>
+						</div>
+
+						<div class=" card">
+							<div class=""><img src="img/brand_07.png" class="img-responsive card-icon" /></div>
+							<div class="card-name">Swisse</div>
+						</div>
+
+						<div class=" card">
+							<div class=""><img src="img/brand_09.png" class="img-responsive card-icon" /></div>
+							<div class="card-name">花王</div>
+						</div>
+						<div class="card">
+							<div class=""><img src="img/brand_11.png" class="img-responsive card-icon" /></div>
+							<div class="card-name">嘉宝</div>
+						</div>
+						<div class="card">
+							<div class=""><img src="img/brand_13.png" class="img-responsive card-icon" /></div>
+							<div class="card-name">保加利亚玫瑰</div>
+						</div>
+
+					</div>
+
+					<div class="swiper-slide swiper-slide-2">
+						<div class=" card">
+							<div class=""><img src="img/brand_33.png" class="img-responsive card-icon" /></div>
+							<div class="card-name">爱他美</div>
+						</div>
+						<div class=" card">
+							<div class=""><img src="img/brand_34.png" class="img-responsive card-icon" /></div>
+							<div class="card-name">荷兰牛栏</div>
+						</div>
+
+						<div class=" card">
+							<div class=""><img src="img/brand_35.png" class="img-responsive card-icon" /></div>
+							<div class="card-name">Swisse</div>
+						</div>
+
+						<div class=" card">
+							<div class=""><img src="img/brand_36.png" class="img-responsive card-icon" /></div>
+							<div class="card-name">花王</div>
+						</div>
+						<div class="card">
+							<div class=""><img src="img/brand_37.png" class="img-responsive card-icon" /></div>
+							<div class="card-name">嘉宝</div>
+						</div>
+						<div class="card">
+							<div class=""><img src="img/brand_38.png" class="img-responsive card-icon" /></div>
+							<div class="card-name">保加利亚玫瑰</div>
+						</div>
+
+					</div>
+
+					<div class="swiper-slide swiper-slide-2">
+						<div class=" card">
+							<div class=""><img src="img/brand_21.png" class="img-responsive card-icon" /></div>
+							<div class="card-name">爱他美</div>
+						</div>
+						<div class=" card">
+							<div class=""><img src="img/brand_22.png" class="img-responsive card-icon" /></div>
+							<div class="card-name">荷兰牛栏</div>
+						</div>
+
+						<div class=" card">
+							<div class=""><img src="img/brand_23.png" class="img-responsive card-icon" /></div>
+							<div class="card-name">Swisse</div>
+						</div>
+
+						<div class=" card">
+							<div class=""><img src="img/brand_24.png" class="img-responsive card-icon" /></div>
+							<div class="card-name">花王</div>
+						</div>
+						<div class="card">
+							<div class=""><img src="img/brand_25.png" class="img-responsive card-icon" /></div>
+							<div class="card-name">嘉宝</div>
+						</div>
+						<div class="card">
+							<div class=""><img src="img/brand_26.png" class="img-responsive card-icon" /></div>
+							<div class="card-name">保加利亚玫瑰</div>
+						</div>
+
+					</div>
+
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+
+		<div class="title">公司动态</div>
+		<div class="part3 clearfix">
+	
+			<div class="float-l" style="width: 50%;">
+				<img src="img/home_26.png " class="img-responsive"/>
+			</div>
+			
+			<div class="float-l" style="width: 50%">
+				<div class="clearfix">
+					<div class="float-l" style="width: 42.5%">
+					    <img src="img/home_28.png " class="img-responsive"/>
+				    </div>
+				    <div class="float-l " style="width: 42.5%">
+					    <img src="img/home_30.png " class="img-responsive"/>
+				    </div>
+				</div>
+				
+				<div style="margin-top: 2.5%; width: 85%;">
+					<img src="img/home_34.png " class="img-responsive"/>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		<div class="part2 clearfix">
+
+			<div class="panel part2-left">
+				<div class="" style="background: #000000; font-size: 2.5rem;padding-bottom: 2rem;">供应商加盟</div>
+				<div class="panel-body" style="background:#302825;">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label for="" class="col-sm-3 control-label">供应商名称</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" id="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-3 control-label">供应商商品/服务</label>
+							<div class="col-sm-8">
+								<input type="tel" class="form-control" id="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-3 control-label">公司所在地</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" id="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-3 control-label">联系人</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" id="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-3 control-label">电话号码</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" id="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-3 control-label">公司网址</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control"></input>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="" class="col-sm-3 control-label">公司介绍</label>
+							<div class="col-sm-8">
+								<textarea class="form-control" rows="4" id=""></textarea>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-sm-offset-3 col-sm-4">
+								<button type="submit" class="btn btn-default join">加盟</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="part2-right txt-c">
+				<div><img src="img/home_39.png" class="img-responsive  tiaoma" /></div>      
+				<div style="margin-top: 2rem;">杭州蜂创科技有限公司</div>
+				<p>全国免费热线:400-166-8448</p>
+				<div style="font-size: 1.5rem;margin-top: 1rem;">
+					<p>客户服务邮箱:feedback@d1ty.com</p>
+					<p>合作咨询邮箱:partner@dlty.com</p>
+					<p>地址:杭州经济技术开发区白杨街道6号大街452号2幢B0718-0719号室</p>
+				</div>
+			</div>
+
+		</div>
+		<footer class="footer panel-footer navbar-fixed-bottom ">
+			<div class="container ">
+				<span>浙ICP备16003625 杭州旋龙贸易有限公司 Copyright&copy; 2013-2016,yanghp.com Inc</span>
+			</div>
+		</footer>
+
+		<script src="js/jquery-2.1.4.min.js "></script>
+		<script src="http://cdn.bootcss.com/Swiper/3.3.1/js/swiper.min.js "></script>
+		<script src="js/bootstrap.min.js "></script>
+		<script src="js/idTabs.min.js "></script>
+		<script>
+			$(function() {
+				var mySwiper = new Swiper('.swiper-container', {
+					pagination: '.swiper-pagination',
+					loop: true,
+					grabCursor: true,
+					paginationClickable: true,
+					autoplay: 3000,
+				});
+			})
+		</script>
+	</body>
+
+</html>
